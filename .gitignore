@@ -1,0 +1,32 @@
+# Sistema e editores
+.DS_Store
+.idea
+.vscode
+*.swp
+*.swo
+
+# Arquivos de log
+*.log
+npm-debug.log*
+
+# Dependências
+/node_modules
+
+# Arquivos de build
+/dist
+/build
+
+# Arquivos temporários
+.tmp
+.temp
+
+# Arquivos de ambiente
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Imagens e arquivos grandes
+# Descomentar se quiser ignorar a pasta de imagens
+# /assets/images/*

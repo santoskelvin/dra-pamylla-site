@@ -1,0 +1,495 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dra. Pamylla - Transforme seu Sorriso</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Loader de Página -->
+    <div class="page-loader">
+        <div class="spinner"></div>
+    </div>
+
+    <header>
+        <button class="menu-toggle">
+            <i class="fas fa-bars"></i>
+        </button>
+        <div class="logo">
+            <a href="index.html">
+                <div class="logo-text">Dra.Pamylla</div>
+            </a>
+        </div>
+        
+        <!-- Menu de navegação principal (desktop) -->
+        <nav class="main-nav">
+            <ul>
+                <li><a href="#hero">Início</a></li>
+                <li><a href="#sobre">Sobre</a></li>
+                <li><a href="#resultados">Resultados</a></li>
+                <li><a href="#diferenciais">Diferenciais</a></li>
+                <li><a href="#lentes">Lentes</a></li>
+                <li><a href="#servicos">Serviços</a></li>
+                <li><a href="#faq">FAQ</a></li>
+            </ul>
+        </nav>
+        
+        <!-- Menu dropdown de ajuda - estrutura revisada -->
+        <div id="ajuda-dropdown-container" class="ajuda-container">
+            <button id="ajuda-btn" class="ajuda-btn" type="button">
+                <i class="fas fa-question-circle"></i> Ajuda
+            </button>
+            <div id="ajuda-dropdown" class="ajuda-dropdown">
+                <ul>
+                    <li>
+                        <a href="https://wa.me/5561992325214?text=Ol%C3%A1%2C%20tenho%20uma%20d%C3%BAvida." class="dropdown-item" target="_blank">
+                            <span class="icon-bg"><i class="fab fa-whatsapp"></i></span>
+                            <span>WhatsApp</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://instagram.com/drapamylla" class="dropdown-item" target="_blank">
+                            <span class="icon-bg"><i class="fab fa-instagram"></i></span>
+                            <span>Instagram</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#faq" class="dropdown-item">
+                            <span class="icon-bg icon-faq"><i class="fas fa-question"></i></span>
+                            <span>Perguntas Frequentes</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <nav class="mobile-menu">
+            <ul>
+                <li><a href="#hero">Início</a></li>
+                <li><a href="#sobre">Sobre</a></li>
+                <li><a href="#resultados">Resultados</a></li>
+                <li><a href="#diferenciais">Diferenciais</a></li>
+                <li><a href="#lentes">Lentes</a></li>
+                <li><a href="#servicos">Serviços</a></li>
+                <li><a href="#faq">FAQ</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="hero" class="reveal">
+        <div class="container hero-content">
+            <div class="row">
+                <div class="col-lg-2 hero-text">
+                    <h5 class="mb-2 fade-in" data-delay="0.2">Clínica Odontológica</h5>
+                    <h1 class="mb-4 fade-in" data-delay="0.4">Dra. Pamylla Lima</h1>
+                    <p class="mb-4 fade-in" data-delay="0.6">Conquiste o sorriso que você sempre sonhou com nossos tratamentos personalizados e atendimento único.</p>
+                    <a href="https://wa.me/5561992325214?text=Olá!%20Gostaria%20de%20agendar%20uma%20avaliação." class="btn btn-primary fade-in" data-delay="0.8" target="_blank">
+                        <span class="btn-text">Agende sua consulta</span>
+                        <span class="btn-icon"><i class="fas fa-arrow-right"></i></span>
+                    </a>
+                    <div class="hero-badges">
+                        <div class="badge fade-in" data-delay="1.0">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Atendimento humanizado</span>
+                        </div>
+                        <div class="badge fade-in" data-delay="1.2">
+                            <i class="fas fa-star"></i>
+                            <span>Resultados comprovados</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div style="z-index: 1; margin-top: -100px;" class="desktop-hide"><img src="assets/images/dra-pamylla-hero.png" alt="Dra. Pamylla Lima"></div>
+        
+        <!-- Elementos decorativos -->
+        <div class="hero-dots animate-float">
+            <span></span><span></span><span></span><span></span><span></span>
+        </div>
+        <div class="hero-decor animate-pulse">
+            <svg width="120" height="120" viewBox="0 0 120 120" fill="none">
+                <circle cx="60" cy="60" r="40" stroke="#CBA135" stroke-width="1" stroke-dasharray="6 6"/>
+            </svg>
+        </div>
+        
+        <!-- Marquee na parte inferior do hero -->
+        <div class="marquee-container fade-in" data-delay="1.4">
+            <div class="marquee-content">
+                <div class="marquee-item">
+                    <i class="fas fa-star star-icon"></i>
+                    <span>Seu sorriso saudável e harmônico</span>
+                </div>
+                <div class="marquee-item">
+                    <i class="fas fa-star star-icon"></i>
+                    <span>Experiência premium do início ao fim</span>
+                </div>
+                <div class="marquee-item">
+                    <i class="fas fa-star star-icon"></i>
+                    <span>Ambiente acolhedor e tecnologia avançada</span>
+                </div>
+                <div class="marquee-item">
+                    <i class="fas fa-star star-icon"></i>
+                    <span>Cuidado personalizado para sua saúde bucal</span>
+                </div>
+                <!-- Duplicação para efeito contínuo -->
+                <div class="marquee-item">
+                    <i class="fas fa-star star-icon"></i>
+                    <span>Seu sorriso saudável e harmônico</span>
+                </div>
+                <div class="marquee-item">
+                    <i class="fas fa-star star-icon"></i>
+                    <span>Experiência premium do início ao fim</span>
+                </div>
+                <div class="marquee-item">
+                    <i class="fas fa-star star-icon"></i>
+                    <span>Ambiente acolhedor e tecnologia avançada</span>
+                </div>
+                <div class="marquee-item">
+                    <i class="fas fa-star star-icon"></i>
+                    <span>Cuidado personalizado para sua saúde bucal</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sobre a Doutora -->
+    <section id="sobre" class="container alt-bg">
+        <div class="section-header slide-in-up">
+            <h2>Conheça a <span class="highlight">Dra. Pamylla</span></h2>
+        </div>
+        <div class="sobre-content">
+            <div class="sobre-image slide-in-left" data-delay="0.2">
+                <img src="assets/images/perfil-section-2.jpeg" alt="Dra. Pamylla - Perfil profissional">
+            </div>
+            <div class="sobre-texto slide-in-right" data-delay="0.4">
+                <h3>Odontologia de excelência com cuidado humanizado</h3>
+                <p>Formada pela Universidade de Brasília (UnB) e especialista em Odontologia Estética, a Dra. Pamylla atua há mais de 10 anos transformando sorrisos e elevando a autoestima de seus pacientes.</p>
+                <p>Com uma abordagem personalizada, a doutora busca entender as necessidades específicas de cada paciente para oferecer o tratamento ideal, unindo a técnica com um atendimento acolhedor.</p>
+                <div class="clinica-fotos">
+                    <h4>Nossa clínica</h4>
+                    <div class="fotos-grid">
+                        <img src="assets/images/clinica-3.jpeg" alt="Interior da clínica" class="scale-in" data-delay="0.6">
+                        <img src="assets/images/clinica-2.jpeg" alt="Sala de atendimento" class="scale-in" data-delay="0.8">
+                        <img src="assets/images/clinica-1.jpeg" alt="Recepção da clínica" class="scale-in" data-delay="1.0">
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Elementos decorativos da seção -->
+        <div class="sobre-decor-dots animate-bounce">
+            <span></span><span></span><span></span>
+        </div>
+        <div class="sobre-decor-circle animate-float">
+        </div>
+    </section>
+
+    <!-- Antes e Depois -->
+    <section id="resultados" class="container">
+        <div class="section-header slide-in-up">
+            <h2>Resultados <span class="highlight">Reais</span></h2>
+            <p class="section-subtitle fade-in" data-delay="0.3">+ de 1.000 pessoas já sorriram com mais confiança após o atendimento da Dra. Pamylla</p>
+        </div>
+        <div class="carousel-container scale-in" data-delay="0.5">
+            <div class="carousel-wrapper">
+                <div class="carousel-track">
+                    <div class="carousel-item">
+                        <div class="item-content">
+                            <div class="antes">
+                                <span class="tag">Antes</span>
+                                <img src="assets/images/antes-1.jpg" alt="Antes do tratamento 1">
+                            </div>
+                            <div class="depois">
+                                <span class="tag">Depois</span>
+                                <img src="assets/images/depois-1.jpg" alt="Depois do tratamento 1">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="item-content">
+                            <div class="antes">
+                                <span class="tag">Antes</span>
+                                <img src="assets/images/antes-2.jpg" alt="Antes do tratamento 2">
+                            </div>
+                            <div class="depois">
+                                <span class="tag">Depois</span>
+                                <img src="assets/images/depois-2.jpg" alt="Depois do tratamento 2">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="item-content">
+                            <div class="antes">
+                                <span class="tag">Antes</span>
+                                <img src="assets/images/antes-3.jpg" alt="Antes do tratamento 3">
+                            </div>
+                            <div class="depois">
+                                <span class="tag">Depois</span>
+                                <img src="assets/images/depois-3.jpg" alt="Depois do tratamento 3">
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Item 4 (Novo) -->
+                    <div class="carousel-item">
+                        <div class="item-content">
+                            <div class="antes">
+                                <span class="tag">Antes</span>
+                                <img src="assets/images/antes-4.jpg" alt="Antes do tratamento 4">
+                            </div>
+                            <div class="depois">
+                                <span class="tag">Depois</span>
+                                <img src="assets/images/depois-4.jpg" alt="Depois do tratamento 4">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-controls">
+                <button class="prev-btn"><i class="fas fa-chevron-left"></i></button>
+                <button class="next-btn"><i class="fas fa-chevron-right"></i></button>
+            </div>
+        </div>
+        <div class="testimonials">
+            <div class="testimonial slide-in-left" data-delay="0.3">
+                <div class="quote">
+                    <i class="fas fa-quote-left"></i>
+                    <p>"Sempre tive vergonha do meu sorriso, mas a Dra. Pamylla transformou não só meus dentes, como minha autoestima. Agora sorrio sem medo!"</p>
+                </div>
+                <div class="author">
+                    <img src="assets/images/avatar-female.jpg" alt="Foto de cliente">
+                    <span>Marina S.</span>
+                </div>
+            </div>
+            <div class="testimonial slide-in-right" data-delay="0.5">
+                <div class="quote">
+                    <i class="fas fa-quote-left"></i>
+                    <p>"O atendimento humanizado e atencioso fez toda diferença. Meu sorriso ficou natural e bonito, exatamente como eu queria!"</p>
+                </div>
+                <div class="author">
+                    <img src="assets/images/avatar-male.jpg" alt="Foto de cliente">
+                    <span>Carlos R.</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Benefícios e Diferenciais -->
+    <section id="diferenciais" class="container alt-bg">
+        <div class="section-header slide-in-up">
+            <h2>Por que escolher a <span class="highlight">Dra. Pamylla</span></h2>
+        </div>
+        <div class="beneficios-grid">
+            <div class="beneficio-card" data-delay="0.1">
+                <div class="icon">
+                    <i class="fas fa-smile"></i>
+                </div>
+                <h3>Lentes de resina com aparência de porcelana</h3>
+                <p>Resultados estéticos superiores com o melhor custo-benefício do mercado.</p>
+            </div>
+            <div class="beneficio-card" data-delay="0.2">
+                <div class="icon">
+                    <i class="fas fa-tooth"></i>
+                </div>
+                <h3>Procedimentos minimamente invasivos</h3>
+                <p>Preservação do seu dente natural, com desgaste mínimo ou inexistente.</p>
+            </div>
+            <div class="beneficio-card" data-delay="0.3">
+                <div class="icon">
+                    <i class="fas fa-clinic-medical"></i>
+                </div>
+                <h3>Clínica moderna e aconchegante</h3>
+                <p>Ambiente planejado para seu conforto, com equipamentos de última geração.</p>
+            </div>
+            <div class="beneficio-card" data-delay="0.4">
+                <div class="icon">
+                    <i class="fas fa-user-md"></i>
+                </div>
+                <h3>Atendimento personalizado</h3>
+                <p>Cada sorriso é único, por isso cada tratamento é exclusivamente planejado para você.</p>
+            </div>
+            <div class="beneficio-card" data-delay="0.5">
+                <div class="icon">
+                    <i class="fas fa-check-circle"></i>
+                </div>
+                <h3>Diversos serviços em um só lugar</h3>
+                <p>Clareamento, facetas, lentes e outros procedimentos para seu sorriso perfeito.</p>
+            </div>
+            <div class="beneficio-card" data-delay="0.6">
+                <div class="icon">
+                    <i class="fas fa-calendar-check"></i>
+                </div>
+                <h3>Finalização em poucas sessões</h3>
+                <p>Resultados rápidos, sem comprometer a qualidade e durabilidade.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Destaque do Serviço Principal -->
+    <section id="lentes" class="container">
+        <div class="section-header slide-in-up">
+            <h2>Lentes de Resina: <span class="highlight">o melhor custo-benefício para seu novo sorriso</span></h2>
+        </div>
+        <div class="lentes-content">
+            <div class="lentes-info slide-in-left" data-delay="0.3">
+                <ul class="lentes-beneficios">
+                    <li class="fade-in" data-delay="0.4"><i class="fas fa-check"></i> Resultado estético muito próximo ao da porcelana</li>
+                    <li class="fade-in" data-delay="0.5"><i class="fas fa-check"></i> Procedimento mais acessível</li>
+                    <li class="fade-in" data-delay="0.6"><i class="fas fa-check"></i> Menor desgaste dos dentes</li>
+                    <li class="fade-in" data-delay="0.7"><i class="fas fa-check"></i> Finalização em poucas sessões</li>
+                    <li class="fade-in" data-delay="0.8"><i class="fas fa-check"></i> Durabilidade e resistência comprovadas</li>
+                </ul>
+                <a href="https://wa.me/5561992325214?text=Olá!%20Gostaria%20de%20saber%20se%20sou%20apto%20para%20as%20lentes%20de%20resina." class="btn primary-btn fade-in" data-delay="0.9">
+                    Descubra se você é apto para esse tratamento
+                </a>
+            </div>
+            <div class="lentes-image slide-in-right" data-delay="0.5">
+                <img src="assets/images/lentes-de-resina.jpeg" alt="Lentes de Resina">
+            </div>
+        </div>
+    </section>
+
+    <!-- Outros Serviços -->
+    <section id="servicos" class="container alt-bg">
+        <div class="section-header slide-in-up">
+            <h2>Outros <span class="highlight">Serviços</span></h2>
+            <p class="section-subtitle fade-in" data-delay="0.3">Além das lentes, a Dra. Pamylla oferece tratamentos que completam o seu sorriso perfeito.</p>
+        </div>
+        <div class="servicos-grid">
+            <div class="servico-card" data-delay="0.1">
+                <img src="assets/images/facetas.jpg" alt="Facetas e lentes de porcelana">
+                <h3>Facetas e lentes de porcelana</h3>
+                <p>Resultado estético superior com grande durabilidade.</p>
+            </div>
+            <div class="servico-card" data-delay="0.2">
+                <img src="assets/images/clareamento.jpg" alt="Clareamento dental">
+                <h3>Clareamento dental</h3>
+                <p>Sorria com confiança e tenha dentes mais brancos.</p>
+            </div>
+            <div class="servico-card" data-delay="0.3">
+                <img src="assets/images/restauracao.jpg" alt="Restaurações estéticas">
+                <h3>Restaurações estéticas</h3>
+                <p>Recupere a função e estética dos seus dentes.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Agendamento / CTA Final -->
+    <section id="agendamento" class="container">
+        <div class="cta-box scale-in" data-delay="0.3">
+            <h2>Está pronta para o sorriso dos seus sonhos?</h2>
+            <p>As vagas para avaliação gratuita são limitadas por semana. Agende a sua agora!</p>
+            <a href="https://wa.me/5561992325214?text=Olá!%20Gostaria%20de%20agendar%20uma%20avaliação." class="btn primary-btn large-btn">
+                <i class="fab fa-whatsapp"></i> Agendar pelo WhatsApp
+            </a>
+        </div>
+    </section>
+
+    <!-- FAQ -->
+    <section id="faq" class="container alt-bg">
+        <div class="section-header slide-in-up">
+            <h2>Perguntas <span class="highlight">Frequentes</span></h2>
+        </div>
+        <div class="faq-container">
+            <div class="faq-item" data-delay="0.1">
+                <div class="faq-question">
+                    <h3>Qual a diferença entre lente de resina e porcelana?</h3>
+                    <i class="fas fa-chevron-down"></i>
+                </div>
+                <div class="faq-answer">
+                    <p>A lente de resina oferece excelente estética com menor custo e preservação dental, enquanto a porcelana tem maior durabilidade e resistência a manchas. Ambas proporcionam resultados estéticos incríveis.</p>
+                </div>
+            </div>
+            <div class="faq-item" data-delay="0.2">
+                <div class="faq-question">
+                    <h3>É possível fazer em qualquer dente?</h3>
+                    <i class="fas fa-chevron-down"></i>
+                </div>
+                <div class="faq-answer">
+                    <p>As lentes podem ser aplicadas nos dentes anteriores (da frente), mas cada caso é avaliado individualmente. Durante a consulta, a Dra. Pamylla irá verificar se você é um candidato ideal para o procedimento.</p>
+                </div>
+            </div>
+            <div class="faq-item" data-delay="0.3">
+                <div class="faq-question">
+                    <h3>Dói para colocar?</h3>
+                    <i class="fas fa-chevron-down"></i>
+                </div>
+                <div class="faq-answer">
+                    <p>Não. O procedimento é minimamente invasivo e realizado com anestesia local quando necessário, garantindo total conforto durante todo o processo.</p>
+                </div>
+            </div>
+            <div class="faq-item" data-delay="0.4">
+                <div class="faq-question">
+                    <h3>Quanto tempo dura?</h3>
+                    <i class="fas fa-chevron-down"></i>
+                </div>
+                <div class="faq-answer">
+                    <p>As lentes de resina têm durabilidade média de 5 a 8 anos, enquanto as de porcelana podem durar mais de 10 anos. A durabilidade depende dos cuidados de higiene e hábitos do paciente.</p>
+                </div>
+            </div>
+            <div class="faq-item" data-delay="0.5">
+                <div class="faq-question">
+                    <h3>Como funciona a avaliação?</h3>
+                    <i class="fas fa-chevron-down"></i>
+                </div>
+                <div class="faq-answer">
+                    <p>Na avaliação inicial, a Dra. Pamylla irá examinar seus dentes, entender suas expectativas e explicar as opções de tratamento. É um momento para tirar todas as suas dúvidas e conhecer os procedimentos disponíveis.</p>
+                </div>
+            </div>
+            <div class="faq-item" data-delay="0.6">
+                <div class="faq-question">
+                    <h3>Os meus dentes serão desgastados para fazer facetas?</h3>
+                    <i class="fas fa-chevron-down"></i>
+                </div>
+                <div class="faq-answer">
+                    <p>O desgaste dental é mínimo, especialmente no caso das lentes de contato dental. A Dra. Pamylla prioriza técnicas conservadoras que preservam ao máximo a estrutura natural do dente.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Rodapé -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-info slide-in-left" data-delay="0.2">
+                    <div class="logo-text footer-logo">Dra.Pamylla</div>
+                    <p>Transformando sorrisos com excelência e cuidado.</p>
+                    <div class="social-links">
+                        <a href="https://www.instagram.com/drapamylla/" target="_blank" class="social-icon">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="https://wa.me/5561992325214" class="social-icon">
+                            <i class="fab fa-whatsapp"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="footer-contact slide-in-right" data-delay="0.4">
+                    <h3>Contato</h3>
+                    <p><i class="fas fa-phone"></i> (61) 99232-5214</p>
+                    <div class="footer-map">
+                        <h3>Localização</h3>
+                        <p><i class="fas fa-map-marker-alt"></i> Torre A - R. Copaíba, 1 - SALA 314 - Águas Claras, Brasília - DF, 71919-540</p>
+                        <div class="map-container fade-in" data-delay="0.6">
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3838.211643868501!2d-48.02130062481629!3d-15.84625388481222!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x935a2d63b3b78d49%3A0x9d12f6f4d006b4f6!2sR.%20Copa%C3%ADba%2C%201%20-%20Torre%20A%20Sala%20314%20-%20Norte%20(Aguas%20Claras)%2C%20Bras%C3%ADlia%20-%20DF%2C%2071919-540!5e0!3m2!1spt-BR!2sbr!4v1718818500000!5m2!1spt-BR!2sbr" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright fade-in" data-delay="0.8">
+                <p>&copy; 2024 Dra. Pamylla - Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <a href="https://wa.me/5561992325214?text=Olá!%20Gostaria%20de%20agendar%20uma%20avaliação." class="whatsapp-float animate-pulse">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <script src="js/script.js"></script>
+</body>
+</html> 
